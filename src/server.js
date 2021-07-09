@@ -32,8 +32,8 @@ configure({
     // Authorize each request against our cached serviceIdMap
     app.use(async function(req, res, next) {
         const credentials = auth.parse(req.headers.authorization);
-    
-        if (credentials && checkServiceCreds(credentials.name, credentials.pass)) {
+
+        if (credentials && await checkServiceCreds(credentials.name, credentials.pass)) {
             next();
         } else {
             res.status(401).json({error: 'not authorized'});
