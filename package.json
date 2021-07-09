@@ -5,8 +5,7 @@
   "main": "sec/server.js",
   "scripts": {
     "test": "exit 0",
-    "start": "node src/server.js",
-    "prepare": "git config core.hooksPath ./githooks/"
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,14 +17,15 @@
     "url": "https://github.com/Plandid/plandid-schedule-api/issues"
   },
   "homepage": "https://github.com/Plandid/plandid-schedule-api#readme",
-  "devDependencies": {
-    "@plandid/node-scripts": "^1.3.4"
-  },
   "dependencies": {
     "@plandid/server-utils": "^0.21.16",
     "axios": "^0.21.1",
     "basic-auth": "^2.0.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@plandid/docker-scripts": "^2.0.2",
+    "commit-testing": "^1.4.0"
   }
 }
