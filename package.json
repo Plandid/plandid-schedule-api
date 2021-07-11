@@ -1,6 +1,6 @@
 {
   "name": "plandid-schedule-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "API that clients send requests to edit account specific data",
   "main": "sec/server.js",
   "scripts": {

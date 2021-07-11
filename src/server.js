@@ -6,7 +6,7 @@ const http = require('http');
 const fs = require('fs');
 const auth = require('basic-auth');
 const { configure, checkServiceCreds, updateEnvironment } = require('@plandid/server-utils');
-const { userTiers, updateUserTiers } = require('./userTiers');
+const { updateUserTiers } = require('./userTiers');
 
 const { serviceName } = JSON.parse(fs.readFileSync('./config.json'));
 
